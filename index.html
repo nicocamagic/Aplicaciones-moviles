@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Gestión de Inventario</h1>
+    </header>
+
+    <nav>
+        <a href="index.html" style="text-decoration: none;">Registro Inventario</a>
+        <a href="ConsultasInventario.html" style="text-decoration: none;">Consultas</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Agregar Producto</h2>
+            <form id="entryForm">
+
+                <label for="productName">Nombre del producto:</label>
+                <input type="text" placeholder="Nombre del producto" id="productName" required>
+
+
+                <label for="productQuantity">Cantidad:</label>
+                <input type="number" placeholder="Ingresa la Cantidad" id="productQuantity" required>
+
+                <label for="productPeso">Peso (ml)</label>
+                <input type="number" placeholder="Ingresa el peso (Opcional)" id="productPeso">
+
+
+
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Inventario</h2>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Nombre del producto</th>
+                        <th>Cantidad</th>
+                        <th>Peso (ml)</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se insertarán los productos dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
